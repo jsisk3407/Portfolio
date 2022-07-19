@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+
+  <body>
+
+    <nav>
+        
+        <h2> Jeremy Sisk </h2>
+
+        <ul class="navbar">
+            <li class="navItem"><a href="#about">About Me</a></li>
+            <li class="navItem"><a href="#projects">Projects</a></li>
+            <li class="navItem"><a href="./contact.html">Contact Information</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="about">
+        
+        <div id="aboutWriting">
+            <h2>About Me</h2>
+            <p>Hello, I am Jeremy Sisk. Over the past year I have been working through Codecademy's Front-End Engineer Career Path in hopes to land my first Web Development position.</p>
+            <p>I currently hold a Master's degree in Digital Forensic Science, a Bachelor's Degree in Psychology, and soon a certificate in Front-End Engineering! I love to learn and to challenge myself with new tasks.</p>
+            <p>So far I have gotten the hang of HTML and CSS and have been making my way through JAVA and React. Thank you for visiting my page. Below are some projects I have worked on over the past few months.</p>
+        </div>
+        <div id="aboutPicture">
+            <img src="./images/jsisk.jpg" alt="Photo of Jeremy">
+        </div>
+        
+    </section>
+
+
+    <section id="projects">
+        
+            <h2>Recent Projects</h2>
+        
+            <div id="Boyd">
+            
+                <h3 > Boyd's Lawn Care Services</h3>
+                <button id="boyd-btn" onclick="displayBoyd()">Show Thumbnail</button>
+                <img id="boyd-img" src="./images/Boyd.png" alt="Screen shot of Boyd's Lawn Care">
+                <a href="https://jsisk3407.github.io/" target="_blank">Full Project Display</a>
+            </div>
+
+            <div id="SouthSt()" style="cursor:pointer">
+                <h3> South Street Pizzeria</h3>
+                <button id="south-btn" onclick="displaySouth()">Show Thumbnail</button>
+                <img id="south-img" src="./images/SouthST.png" alt="Screen shot of South Street Pizzeria">
+                <a href="https://jsisk3407/First-Portfolio-Project" target="_blank">Full Project Display</a>
+            </div>
+            
+    
+    </section>
+
+<script>
+    function displayBoyd(){
+        document.getElementById('boyd-img').style.display = "unset";
+        document.getElementById('boyd-btn').style.display = "none";
+    }
+
+    function displaySouth(){
+        document.getElementById('south-img').style.display = "unset";
+        document.getElementById('south-btn').style.display = "none";
+    }
+    
+</script>
+
+  </body>
+
+
+</html>

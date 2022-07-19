@@ -1,0 +1,193 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #E5E4E2;
+    width: 80%;
+    margin: auto;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;        
+}
+
+nav h2 {
+    flex-basis: 40%;
+    margin-bottom: 0px;
+    font-size: 4rem;  
+}
+
+
+.navbar {
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+    margin-bottom: 0px;
+     
+}
+
+
+.navItem {
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px 15px 0px 15px;
+    
+}
+
+.navItem a {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+.navItem a:hover {
+    color: red;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+#aboutWriting {
+    display: block;
+    width: 40%;
+    
+}
+
+ h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#aboutPicture {
+    display: flex;
+    margin-top: 10%;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+#aboutPicture img{
+    width: 50%;
+    
+}
+
+#projects{
+    width: 80%;
+    margin: auto;
+   margin-top: 100px;
+   text-align: center;
+}
+
+#projects h3{
+    border: 1px solid black;
+    padding: 2% 0;
+    border-radius: 5%;
+}
+
+
+#boyd-img, #south-img {
+    display: none;
+    width: 100%;
+}
+
+#contactInfo{
+    margin-top: 100px;
+}
+
+button {
+    padding: 2%;
+    margin-right: 3%;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: blue;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media(max-width: 760px){
+    body {
+        width: 90%;
+        padding: 10%;
+    }
+    nav h2 {
+        font-size: 2.5rem;
+    }
+
+    .navItem {
+    
+       padding: 5%;;
+    }
+
+    .navItem a {
+        font-size: 1rem;
+
+}
+
+#about {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding-top: 10%;
+}
+
+#aboutWriting {
+    width: 90%;
+    text-align: center;
+}
+
+#aboutPicture {
+    padding-top: 5%;
+    text-align: center;
+}
+
+#projects h3{
+    border: none;
+}
+
+#boyd-img, #south-img{
+    display: unset;
+}
+
+button {
+    display: none;
+}
+
+
+/* --- Contact Page --- */
+
+nav{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+#contactInfo {
+    padding-left: 15%;
+}
+
+
+}
